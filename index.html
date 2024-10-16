@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Platform</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We connect clients with developers for their projects.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Developer Portfolio</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Developer 1</h3>
+                <p>Specialty: Web Development</p>
+                <button onclick="contactDeveloper('Developer 1')">Contact</button>
+            </div>
+            <div class="card">
+                <h3>Developer 2</h3>
+                <p>Specialty: Mobile Apps</p>
+                <button onclick="contactDeveloper('Developer 2')">Contact</button>
+            </div>
+            <!-- Add more developers as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfolio Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
